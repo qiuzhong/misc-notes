@@ -53,7 +53,15 @@ Now we can build **iotivity**
 ```
 $ scons TARGET_OS=linux TARGET_TRANSPORT=IP
 ```
-During the build, it will download other libraries like google test
+During the build, it will download other libraries like google test.
+
+### Notes
+For Ubuntu Linux 16.04, gcc version is 5.3.1, there is an error that stop the compiling.
+> service/resource-container/src/BundleInfoInternal.cpp:35:
+> error: Converting to 'bool' from 'nullptr_r' requires direct-intilialization.
+
+To fix this issue, please change:
+nullptr -> false at line 35 of that cpp source file.
 
 ## Run the simple example
 Please open 2 terminals, one for the server and the other for the client
