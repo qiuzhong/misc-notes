@@ -19,7 +19,7 @@ $ node-gyp configure
 ```
 
 For the first time to run **node-gyp configure** command, it will download the
-NodeJS header files to **~/.node-gyp/<NodeJS VERSION>**, these header files are
+NodeJS header files to **~/.node-gyp/NodeJS VERSION/**, these header files are
 used to support the c++ addons compilation.
 
 Here is the confgure log
