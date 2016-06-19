@@ -1,0 +1,17 @@
+{
+  "name": "gulpdemo",
+  "version": "1.0.0",
+  "description": "Gulp Hello World demo example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp"
+  ],
+  "author": "qiuzhong",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
