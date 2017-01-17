@@ -8,10 +8,6 @@ You can refer to [build iotivity](https://github.com/qiuzhong/misc-notes/blob/ma
 ## Install gulp and grunt
 ```
 $ sudo npm install gulp-cli grunt-cli -g --verbose
-```
-
-##
-```
 $ git clone https://github.com/01org/iot-rest-api-server.git
 $ cd iot-rest-api-server
 $ npm install --verbose
