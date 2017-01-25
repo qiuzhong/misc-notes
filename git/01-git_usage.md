@@ -11,7 +11,7 @@
 ### Config the editor
     $ git config --global core.editor "Your favorite text editor"
 #### Like this
-    $ git config --global core.edit "vim"
+    $ git config --global core.editor "vim"
 
 ## Clone a repository
 ### You can clone a git repository via https or ssh:
