@@ -1,2 +1,2 @@
 # Introduction
-Scripts that make everyday work more useful.
+Simplify my everyday work.
