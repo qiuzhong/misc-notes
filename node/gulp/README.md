@@ -7,7 +7,7 @@ Gulp is very like the Grunt
 
 ## Install Gulp
 ```
-$ sudo npm install -g gulp-cli --verose
+$ sudo npm install -g gulp-cli --verbose
 ```
 
 ### Runt the demo
