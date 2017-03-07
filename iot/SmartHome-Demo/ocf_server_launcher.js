@@ -22,8 +22,7 @@ var sensor_js_map = {
     'temperature': 'temperature.js'
 };
 
-var argv = process.argv.slice(2);
-if (argv.length < 2) {
+function showUsage() {
     console.log('Usage: \n\tnode %s <sensor> <timeout>\n', path.basename(__filename));
     console.log('Sensors:')
     for (sensor in sensor_js_map) {
@@ -31,7 +30,12 @@ if (argv.length < 2) {
     }
     console.log('Timeout:\n\tThe time of the OCF server is running, in second. ' +
                 'After that, a SIGINT signal will be sent and the OCF server exits.');
-    process.exit(1);
+    process.exit(1);    
+}
+
+var argv = process.argv.slice(2);
+if (argv.length < 2) {
+    showUsage();
 }
 
 var sensor = argv[0]
