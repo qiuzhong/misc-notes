@@ -16,7 +16,7 @@ sensor_resource_type = {
     "power-uart": "/a/power",
     "rgb_led": "/a/rgbled",
     "solar": "/a/solar",
-    "switch": "/a/switch",
+    "switch": "/a/binarySwitch",
     "temperature": "/a/temperature"
 }
 
