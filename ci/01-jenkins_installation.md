@@ -70,7 +70,7 @@ sudo service nginx restart
 ```
 
 ## Jenkins settings
-After installing Jenkins, go to <strong>http://<IP>:8080</strong> and it will prompt to get intial password from 
+After installing Jenkins, go to <strong>http://<localhost>:8080</strong> and it will prompt to get intial password from 
 <strong>/var/lib/jenkins/secrets/initialAdminPassword</strong>
 
 Go through it and it will prompt you to install recommended plugins:
@@ -97,4 +97,4 @@ Network proxy may be necessary during installing them.
 
 When this step completes, it will prompt you to create first admin user.
 
-When everything goes fine, you can either go to <strong>http://<ip></strong> or <strong>https://<ip>:8080</strong>
+When everything goes fine, you can either go to <strong>http://<localhost></strong> or <strong>https://<localhost>:8080</strong>
