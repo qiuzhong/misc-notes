@@ -70,7 +70,7 @@ sudo service nginx restart
 ```
 
 ## Jenkins settings
-After installing Jenkins, go to <strong>http://localhos>:8080</strong> and it will prompt to get intial password from 
+After installing Jenkins, go to <strong>http://localhos:8080</strong> and it will prompt to get intial password from 
 <strong>/var/lib/jenkins/secrets/initialAdminPassword</strong>
 
 Go through it and it will prompt you to install recommended plugins:
