@@ -19,7 +19,7 @@ var mraa = '';
 try {
     mraa = require('mraa');
 } catch (e) {
-    debuglog('No mraa module: ', e.message);
+    console.log('No mraa module: ', e.message);
     process.exit(1);
 }
 
