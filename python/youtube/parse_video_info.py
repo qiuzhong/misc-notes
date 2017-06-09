@@ -28,7 +28,8 @@ def parse_video_info(info_file):
             elif resolution_mode and 'size:' in line:
                 resolution['size'] = line.strip().replace('size:', '').strip()
             elif resolution_mode and '# download-with:' in line:
-                resolution['download-with'] = line.strip().replace('# download-with:', '').replace('[4m', '').replace(' [URL][0m', '').strip()
+                resolution['download-with'] = line.strip().replace(
+                    '# download-with:', '').replace('[4m', '').replace(' [URL][0m', '').strip()
                 resolutions.append(resolution)
                 resolution_mode = True
             else:
@@ -43,3 +44,4 @@ if __name__ == '__main__':
     # pp = pprint.PrettyPrinter(indent=4)
     # pp.pprint(video)
     print(json.dumps(video, indent=4))
+    resolutions = video.get('resolutions')
