@@ -7,7 +7,14 @@ import parse_video_info
 import highest_resolutions_video_cmd
 
 def you_get_i_url(video_url):
-    youtube_video = 'https://www.youtube.com' + video_url
+    # print(video_url)
+    if video_url.startswith('/watch?'):
+        youtube_video = 'https://www.youtube.com' + video_url
+    elif video_url.startswith('https://www.youtube.com'):
+        youtube_video = video_url
+    else:
+        print('Not supported URL, exit.')
+        sys.exit(1)
     p = subprocess.Popen(['you-get' , '-i', '{0}'.format(youtube_video)],
                         stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
     p.wait()
