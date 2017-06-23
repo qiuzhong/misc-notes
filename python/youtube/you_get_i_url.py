@@ -29,5 +29,11 @@ if __name__ == '__main__':
     you_get_i_url(sys.argv[1])
     video = parse_video_info.parse_video_info('video_info.txt')
     final_you_get_cmd = highest_resolutions_video_cmd.get_highest_resolution_video_cmd(video)
-    print(final_you_get_cmd + ' "https://www.youtube.com' + sys.argv[1].strip('"') + '"')
+    if not final_you_get_cmd:
+        print('No highest resolution mp4 format found!')
+        sys.exit(1)
+    if sys.argv[1].startswith("https://www.youtube.com"):
+        print(final_you_get_cmd + ' "' + sys.argv[1] + '"')
+    else:
+        print(final_you_get_cmd + ' "https://www.youtube.com' + sys.argv[1].strip('"') + '"')
 
