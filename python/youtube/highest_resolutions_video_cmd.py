@@ -8,13 +8,14 @@ def get_highest_resolution_video_cmd(video_json_info):
     final_you_get_cmd = None
     for resolution in resolutions:
         quality = resolution.get('quality')
+        container = resolution.get('container')
         if quality[0].isalpha():
             pass
         else:
             you_get_cmd = resolution.get('download-with')
             width, height = quality.split('x')
             current_resolution = int(width) * int(height)
-            if current_resolution >= max_resolution:
+            if current_resolution >= max_resolution and container == 'mp4':
                 max_resolution = current_resolution
                 final_you_get_cmd = you_get_cmd
 
